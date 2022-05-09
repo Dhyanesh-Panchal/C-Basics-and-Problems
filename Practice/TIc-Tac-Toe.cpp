@@ -23,7 +23,6 @@ bool CheckEmpty(int input)
 {
     if (Xstate[input] == 0 && Ostate[input] == 0)
         return 1;
-    return 0;
 }
 bool CheckWin()
 {
