@@ -62,6 +62,10 @@ bool CheckWin()
             if (Xstate[7])
                 if (Xstate[8])
                     return 1;
+        if (Xstate[2])
+            if (Xstate[4])
+                if (Xstate[6])
+                    return 1;
         return 0;
     }
     else
@@ -99,6 +103,10 @@ bool CheckWin()
         if (Ostate[6])
             if (Ostate[7])
                 if (Ostate[8])
+                    return 1;
+        if (Ostate[2])
+            if (Ostate[4])
+                if (Ostate[6])
                     return 1;
         return 0;
     }
