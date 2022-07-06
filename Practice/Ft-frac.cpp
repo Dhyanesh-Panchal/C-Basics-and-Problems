@@ -2,7 +2,7 @@
 
 using namespace std;
 float val;
-float ft, in, inFracVal, inFN, inFD, maxDeno;
+float ft, in, inFracVal, inFN, inFD, maxDeno, factor;
 
 float mod(float x)
 {
@@ -23,7 +23,7 @@ void neutralis()
 void PrintFrac()
 {
     ft = floor(val);
-    in = 12 * (val - floor(val));
+    in = factor * (val - floor(val));
     inFracVal = in - floor(in);
 
     inFD = maxDeno;
@@ -47,7 +47,8 @@ void PrintFrac()
 
 int main()
 {
-
+    cout << "enter the fractor";
+    cin >> factor;
     cout << "Enter the value in feet:";
     cin >> val;
     cout << "Enter max precision in deno:";
