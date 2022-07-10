@@ -4,11 +4,18 @@ using namespace std;
 
 int main()
 {
-    long long int n;
-    cin >> n;
-    for (int i = 0; i < n; i++)
+    float n;
+    while (1)
     {
-        cout << "***   ";
+        // long long int x = 0;
+        cin >> n;
+        // while (n >= 0.02)
+        // {
+        //     x = x + 0.02;
+        //     n = n - 0.02;
+        // }
+        cout << endl
+             << "       " << ((n / 0.02)) << endl;
     }
 
     return 0;
