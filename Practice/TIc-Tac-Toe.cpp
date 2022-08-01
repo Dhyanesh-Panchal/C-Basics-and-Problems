@@ -23,6 +23,7 @@ bool CheckEmpty(int input)
 {
     if (Xstate[input] == 0 && Ostate[input] == 0)
         return 1;
+    return 0;
 }
 bool CheckWin()
 {
@@ -123,6 +124,11 @@ int main()
             cout << "\nX's turn:";
             int input;
             cin >> input;
+            if (input < 0 || input > 8)
+            {
+                cout << "enter valid choice\n";
+                continue;
+            }
             if (CheckEmpty(input))
             {
                 Xstate[input] = 1;
@@ -144,6 +150,11 @@ int main()
             cout << "\nO's turn:";
             int input;
             cin >> input;
+            if (input < 0 || input > 8)
+            {
+                cout << "enter valid choice\n";
+                continue;
+            }
             if (CheckEmpty(input))
             {
                 Ostate[input] = 1;
